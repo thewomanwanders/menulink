@@ -1,0 +1,284 @@
+/* ==== BROWSER RESETS  ==== */
+* { box-sizing: border-box; padding: 0; margin: 0 }
+body, html { height: 100% }
+body { max-width: 1600px; margin: 0 auto }
+
+
+/* ==== UTILITY CLASS  ==== */
+.img-fluid { width: 100%; height: auto }
+
+
+
+/* ==== HEADING AND PARAGRAPH STYLES  ==== */
+body { font-family: sans-serif}
+
+.page-wrapper h1 { color: deeppink }
+.page-wrapper p  { color: #32364E }
+
+/* Desktop */
+@media all and (min-width:767px) { 
+	.page-wrapper {
+		width: 72%;
+		margin: 20px auto 60px auto;
+	}
+	.page-wrapper h1 { 
+		font-size: 52px;
+		margin-bottom: 2%
+	}
+	
+	.page-wrapper p { 
+		font-size: 17px;
+		line-height: 1.5;
+		margin-bottom: 16px;
+	}
+}
+
+/* Mobiles */
+@media all and (max-width:768px) { 
+	.page-wrapper {
+		width: 90%;
+		margin: 12px auto 40px auto
+	}
+	.page-wrapper h1 { margin-bottom: 8% }
+	.page-wrapper p { 
+		font-size: 15px;
+		line-height: 1.4;
+		margin-bottom:12px;
+		color: #222
+	}
+}
+
+/* === DESKTOP MENU -==== */
+
+
+/* Desktop */
+@media all and (min-width:767px) { 
+	.container-menu-desktop {
+		width: 86%;
+		height:50px;
+		position: fixed;
+		top: 20px;
+		left: 7%;
+	}
+
+	.container-menu-desktop img { max-width: 200px; height: auto; float: left }
+	.container-menu-desktop ul { float: right; vertical-align: baseline }
+
+	.container-menu-desktop ul li { 
+		display: inline;
+		list-style-type: none;
+	    margin-right: 20px;
+	}
+
+	.container-menu-desktop ul li:last-child { 
+	    margin-right: 0;
+	}
+
+	.container-menu-desktop ul li a { 
+		border-bottom:none; 
+		text-decoration: none;
+		color: #fff;
+		font-weight:bold;
+		font-size:18px;
+	}
+
+	.container-menu-desktop ul li a:hover, 
+	.container-menu-desktop ul li a:active { 
+		border-bottom:none; 
+		text-decoration: underline;
+		color: #fff;
+	}
+
+	.container-menu-desktop ul li a.btn-solid { 
+		border-bottom:none; 
+		text-decoration: none;
+		background-color: deeppink;
+		color:#fff;
+	}
+
+	.container-menu-desktop ul li a.btn-solid:hover, 
+	.container-menu-desktop ul li a.btn-solid:active { 
+		border-bottom:none;
+		text-decoration: none;
+		background-color: blue;
+		color:#fff;
+	}
+
+	.container-menu-desktop-on-scroll { 
+		width: 100%;
+		left: 0;
+		top:0;
+		height: 72px;
+		padding: 12px 7% 12px 7%;
+		background-color: deeppink;
+	}
+
+}
+
+/* Mobiles */
+@media all and (max-width:768px) { 
+	.container-menu-wrapper {
+		display: none;
+	}
+
+}
+
+
+
+/* === HERO BLOCK 6 === */
+
+.hero-block-6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('../img/bike-tours.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-block-6 h1, .hero-block-6 h2 {
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.hero-block-6 h1 {
+	font-weight: bold;
+	font-size: calc(54px + (112 - 54) * ((100vw - 320px)/ (1600 - 320)));
+	text-shadow: 2px 2px #222;
+
+}
+
+.hero-block-6 h2 {
+	font-weight: bold;
+	font-size: calc(22px + (48 - 22) * ((100vw - 320px)/ (1600 - 320)));
+	line-height: 1.5;
+	text-shadow: 2px 2px #222;
+	text-transform:uppercase;
+}
+
+/* Desktop - height and bottom margin,, text width */
+@media all and (min-width:768px) { 
+	.hero-block-6 { height: 580px; margin-bottom: 80px }
+	.hero-block-6 h1, .hero-block-6 h2 { 
+		width: 60%; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hero-block-6 h1 { margin-bottom: 5% }
+	.hero-block-6 h2 { margin-bottom: 0 }
+}
+
+/* Mobiles - height and bottom margin, text width */
+@media all and (max-width:767px) { 
+	.hero-block-6 { height: 360px; margin-bottom: 40px }
+	.hero-block-6 h1, .hero-block-6 h2  { 
+		margin-top: 0; 
+		width: 70%; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hero-block-6 h1 { margin-bottom: 5% }
+	.hero-block-6 h2 { margin-bottom: 0 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== BASIC HYPERLINK STYLES ==== */
+
+h1 a:link, h1 a:visited { color: deeppink } 
+h1 a:hover, h1 a:active { color: blue } 
+
+p a:link, p a:visited { color: deeppink } 
+p a:hover, p a:active { color: blue } 
+
+
+/* ==== FANCY HYPERLINK STYLE  ==== */
+
+p a.fancy { 
+	color: deeppink;
+	text-decoration: none;
+	border-bottom: solid 2px deeppink;
+	padding-bottom:1px;
+}
+
+p a.fancy:hover, p a.fancy:active {
+	color: blue;
+	text-decoration: none;
+	border-bottom: solid 2px blue;
+	padding-bottom:1px;
+}
+
+/* ==== SOLID BUTTON HYPERLINK STYLES  ==== */
+
+a.btn-solid { 
+	display: inline-block;
+	margin-bottom:20px;
+	margin-right: 32px;
+	padding: 14px 32px 14px 32px;
+	background-color: deeppink;
+	color:#fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+a.btn-solid:hover, a.btn-solid:active {
+	background-color: blue;
+	color: #fff;
+}
+
+
+/* ==== SOLID BUTTON HYPERLINK STYLES  ==== */
+
+a.btn-ghost { 
+	display: inline-block;
+	margin-bottom:20px;
+	margin-right: 32px;
+	padding: 14px 32px 14px 32px;
+	background-color: transparent;
+	color: deeppink;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	border: solid 2px deeppink;
+}
+
+a.btn-ghost:hover, a.btn-ghost:active {
+	background-color: blue;
+	color: #fff;
+	border: solid 2px blue;
+}
+
+/* ==== BUTTON HYPERLINK CORNER STYLES  ==== */
+
+a.btn-soft    { border-radius: 5px }
+a.btn-rounded { border-radius: 100px }
+
+
+

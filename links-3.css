@@ -1,0 +1,110 @@
+/* ==== BROWSER RESETS  ==== */
+* { box-sizing: border-box; padding: 0; margin: 0 }
+body, html { height: 100% }
+body { max-width: 1600px; margin: 0 auto }
+
+
+/* ==== UTILITY CLASS  ==== */
+.img-fluid { width: 100%; height: auto }
+
+
+
+/* ==== HEADING AND PARAGRAPH STYLES  ==== */
+body { font-family: sans-serif}
+
+.page-wrapper h1 { color: deeppink }
+.page-wrapper p  { color: #32364E }
+
+/* Desktop */
+@media all and (min-width:767px) { 
+	.page-wrapper {
+		width: 72%;
+		margin: 20px auto 60px auto;
+	}
+	.page-wrapper h1 { 
+		font-size: 52px;
+		margin-bottom: 2%
+	}
+	
+	.page-wrapper p { 
+		font-size: 17px;
+		line-height: 1.5;
+		margin-bottom: 16px;
+	}
+}
+
+/* Mobiles */
+@media all and (max-width:768px) { 
+	.page-wrapper {
+		width: 90%;
+		margin: 12px auto 40px auto
+	}
+	.page-wrapper h1 { margin-bottom: 8% }
+	.page-wrapper p { 
+		font-size: 15px;
+		line-height: 1.4;
+		margin-bottom:12px;
+		color: #222
+	}
+}
+
+/* ==== BASIC HYPERLINK STYLES ==== */
+
+h1 a:link, h1 a:visited { color: deeppink } 
+h1 a:hover, h1 a:active { color: blue } 
+
+p a:link, p a:visited { color: deeppink } 
+p a:hover, p a:active { color: blue } 
+
+
+/* ==== FANCY HYPERLINK STYLE  ==== */
+
+p a.fancy { 
+	color: deeppink;
+	text-decoration: none;
+	border-bottom: solid 2px deeppink;
+	padding-bottom:1px;
+}
+
+p a.fancy:hover, p a.fancy:active {
+	color: blue;
+	text-decoration: none;
+	border-bottom: solid 2px blue;
+	padding-bottom:1px;
+}
+
+/* ==== SOLID BUTTON HYPERLINK STYLES  ==== */
+
+a.btn-solid { 
+	display: inline-block;
+	margin-bottom:20px;
+	margin-right: 32px;
+}
+
+a.btn-solid:hover, a.btn-solid:active {
+
+
+}
+
+
+/* ==== SOLID BUTTON HYPERLINK STYLES  ==== */
+
+a.btn-ghost { 
+	display: inline-block;
+	margin-bottom:20px;
+	margin-right: 32px;
+
+}
+
+a.btn-ghost:hover, a.btn-ghost:active {
+
+}
+
+/* ==== BUTTON HYPERLINK CORNER STYLES  ==== */
+
+a.btn-soft    { border-radius: 5px }
+a.btn-rounded { border-radius: 100px }
+
+
+
+
